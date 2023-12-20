@@ -158,7 +158,7 @@ export default class Batch {
       this.generateControl()
     ]);
   
-    return `${headerString}\r\n${entriesString}${controlString}`;
+    return `${headerString}\r\n${entriesString.endsWith('\r\n') ? entriesString : (entriesString + '\r\n')}${controlString}`;
   }
 
   isAHeaderField(field: keyof BatchHeaders|keyof BatchControls): field is keyof BatchHeaders {
