@@ -1,8 +1,6 @@
 # nACHos
 
-[![npm](https://img.shields.io/npm/v/nach2.svg?maxAge=2592000)](https://www.npmjs.com/package/node-nach)
-[![Travis](https://img.shields.io/travis/glenselle/nACH.svg?maxAge=2592000)](https://travis-ci.org/wilix-team/node-nach)
-[![Dependencies](https://david-dm.org/wilix-team/node-nach.svg)](https://david-dm.org/wilix-team/node-nach)
+[![npm](https://img.shields.io/npm/v/nach2.svg?maxAge=2592000)](https://github.com/AssetVal/node-nacha)
 
 nACHos is a library for generating or parsing ACH (Automated Clearing House) files for use within the ACH network, written in typescript. It's based off the repo Node-nACH, but rewritten to drop all the dependencies, fix the outstanding bugs, and modernize the syntax. I hope it's an even more high-performance, dependable and frustration-free solution for developers than the original, which did an amazing job. 
 
@@ -147,15 +145,13 @@ await file.writeFile('./nach.txt');
 ```
 
 ## Tests
-Test coverage is currently a work in progress. To run:
+Test coverage could be better, but we have a good start. To run the tests, simply run:
 
     $ npm test
 
 
 ## License
 The MIT License (MIT)
-
-Copyright (c) 2016 Glen Selle
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
