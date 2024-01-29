@@ -1,6 +1,6 @@
 # nACHos
 
-[![npm](https://img.shields.io/npm/v/nach2.svg?maxAge=2592000)](https://github.com/AssetVal/node-nacha)
+[![Node.js CI](https://github.com/AssetVal/node-nacha/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/AssetVal/node-nacha/actions/workflows/node.js.yml)
 
 nACHos is a library for generating or parsing ACH (Automated Clearing House) files for use within the ACH network, written in typescript. It's based off the repo Node-nACH, but rewritten to drop all the dependencies, fix the outstanding bugs, and modernize the syntax. I hope it's an even more high-performance, dependable and frustration-free solution for developers than the original, which did an amazing job. 
 
