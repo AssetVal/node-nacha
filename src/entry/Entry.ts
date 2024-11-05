@@ -28,10 +28,13 @@ export default class Entry {
   constructor(options: EntryOptions, autoValidate: boolean = true, debug: boolean = false) {
     this.debug = debug;
 
-    if (options.fields){
-      this.fields = deepMerge(EntryFieldDefaults, options.fields) as EntryFields;
+    // Create a new object for fields to avoid shared references
+    const defaultFields = JSON.parse(JSON.stringify(EntryFieldDefaults));
+    
+    if (options.fields) {
+        this.fields = deepMerge(defaultFields, options.fields) as EntryFields;
     } else {
-      this.fields = deepMerge({}, EntryFieldDefaults) as EntryFields;
+        this.fields = defaultFields;
     }
 
     highLevelFieldOverrides.forEach((field) => {
